@@ -1,0 +1,217 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+body{
+    overflow-x: hidden;
+}
+
+p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 110%;
+}
+#nav
+{
+    background-color:rgb(32, 33, 36);
+
+}
+.dd
+{
+    box-shadow: 0px 0px 2px rgba(154,205, 50,0.9);
+}
+.navbar-brand
+{
+    font-family: 'bb';
+    color: yellowgreen;
+    font-size: 400%;
+    transition: 1s;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.bg
+{
+    width: 400px;
+    height: 550px;
+    margin: 9% 10% 5%;
+    opacity: 0.7;
+    transition: 0.6s;
+    -webkit-filter: drop-shadow(5px 5px 10px #222);
+    filter: drop-shadow(5px 5px 10px #222);
+}
+.bg:hover{
+    opacity: 1;
+    transform: translateY(-3%);
+    
+}
+.gg
+{
+    padding: 6% 0% 0%5%;
+    /* margin-right: -10px; */
+}
+.tra
+{
+    padding: 6% 0 6% 6%;
+    
+    /* background-color: rgba(32,33,36,0.5); */
+}
+.nav-link
+{
+    color: whitesmoke;
+    font-size: 180%;
+    font-family: 'bb';
+}
+.nav-link:hover
+{
+    color: rgb(173, 255, 47);
+   
+}
+
+#char
+{
+    background-color:#202124 ;
+    padding: 2% 15.5% 7%;
+    color: white;
+    
+}
+.max
+{
+    max-height: 300px;
+}
+.row
+{
+    overflow: hidden;
+}
+
+.img1
+{
+    filter: grayscale(100%);
+    float: right;
+}
+.right
+{
+    border-radius: 0 100px 100px 0;
+    padding: 5% 2%;
+    border-right: solid 5px greenyellow;
+    color: whitesmoke;
+    
+}
+.left
+{
+    border-radius: 100px 0 0 100px;
+    color: whitesmoke;
+    border-left:solid 5px greenyellow;
+    padding: 5% 2% 5% 10%;
+    
+
+}
+.bg-light1{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.second
+{
+    
+    background-color:#202124;
+    color: white;
+    background-image: linear-gradient(rgba(32,33,36,0),rgba(32,33,36,0.2)),url("img/11_new.png");
+    
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1500px 700px;
+    background-position-y:-20px;
+}
+
+#qt
+{
+    background-color: #202124;
+    padding: 2% 15.5%;
+    color: white;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 6.25rem;
+    margin: 0;
+    right:2% ;
+    left: 2%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: white;
+    background-color: rgba(32, 33, 36, 0.4);
+    text-align: center;
+}
+.carousel-control-next, .carousel-control-prev
+{
+    color: black;
+    background-color:transparent ;
+    border: none;
+}
+.carousel-control-next
+{
+    margin-right:-133px;
+}
+.carousel-control-prev
+{
+    margin-left:-133px;
+}
+.slider
+{
+    margin: 1% 2% 10%;
+}
+
+#footer
+{
+    background-color: #202124;
+    color: white;
+    padding: 2% 15.5% 2%;
+}
+@font-face {
+    font-family: 'bb';
+    src: url('Heart Breaking Bad.otf');
+}
+.cursor
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.cursor::after , .cursor::before
+{
+    content: '';
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 50px;
+}
+.cursor::before
+{
+    background-color: white;
+    /* transform: translate(-50%,-50%)scale(3); */
+}
+.cursor.click::before
+{
+    animation: click 0.3s ease-in-out forwards;
+}
+@keyframes click{
+    0%{
+        opacity: 1;
+        transform: translate(-50%,-50%)scale(1);
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(-50%,-50%)scale(10);
+    }
+}
